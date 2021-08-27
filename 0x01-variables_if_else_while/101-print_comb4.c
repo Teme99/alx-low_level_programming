@@ -1,23 +1,35 @@
 #include <stdio.h>
+
 /**
- * main - where excution starts
+ * main - where excuting starts
  *
  * Return: 0 for success
  */
 int main(void)
 {
-int c, i, k;
-for (c = '0'; c <= '9'; c++)
+int c, i, k, j;
+
+for (c = 48; c <= 57; c++)
 {
-for (i = '0'; i <= '9'; i++)
+for (i = 48; i <= 57; i++)
 {
-for (k = '0'; k <= '9'; k++)
-if (c < i && i < k)
+for (k = 48; k <= 57; k++)
+{
+for (j = 48; j <= 57; j++)
+{
+if (((k + j) > (c + i) &&  k >= c) || c < k)
 {
 putchar(c);
 putchar(i);
+putchar(' ');
 putchar(k);
-if (c != '7')
+putchar(j);
+
+if (c + i + k + j == 227 && c == 57)
+{
+break;
+}
+else
 {
 putchar(',');
 putchar(' ');
@@ -26,6 +38,9 @@ putchar(' ');
 }
 }
 }
+}
+
 putchar('\n');
+
 return (0);
 }
