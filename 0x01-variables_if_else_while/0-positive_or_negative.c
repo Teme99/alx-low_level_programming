@@ -1,17 +1,17 @@
-nclude <stdlib.h>
+#include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 
 /**
- * main - where everything starts
+ * main - where excution starts
  *
- * Return: 0 for success
+ * Return 0 for success
  */
 int main(void)
 {
 	int n;
 
-	randnum(time(0));
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
