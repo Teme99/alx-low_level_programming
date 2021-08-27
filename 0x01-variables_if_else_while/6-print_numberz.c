@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * main - where excution starts
- * 
+ *
  * Return: 0 for success
  */
 int main(void)
