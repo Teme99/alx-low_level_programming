@@ -1,26 +1,21 @@
 #include "main.h"
 
 /**
- * print_sign - sign of the number
+ * _isalpha - checks lowercase existance
  *
- * Return: 1 if +, 0 if 0, and -1 if -/
+ * @n: type of character
+ *
+ * Return: 1 if n is 1 and 0 other wise
  */
 
-int print_sign(int n)
+int _isalpha(int n)
 {
-	if (n > 0)
+	if ((n >= 97 && n <= 123) || (n >= 65 && n <= 91))
 	{
-		_putchar('+');
 		return (1);
-	}
-	else if (n < 0)
-	{
-		_putchar('-');
-		return (-1);
 	}
 	else
 	{
-		_putchar('0');
 		return (0);
 	}
 }
