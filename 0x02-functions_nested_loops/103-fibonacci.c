@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - where execution starts
+ * main: where execution starts
  *
  * Description: fib numbers until the fib value itself
  * 
