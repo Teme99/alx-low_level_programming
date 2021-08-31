@@ -1,19 +1,22 @@
 #include "main.h"
+
 /**
  * main - where execution starts
  *
  * Return: 0 for success
  */
+
 int main(void)
-
 {
+	char n[] = "_putchar";
+	int i = 0;
 
-char c[10] = "_putchar";
-int i;
-for (i = 0; i <= 9; i++)
-{
-_putchar(c[i]);
-}
-_putchar('\n');
-return (0);
+	while (n[i] != '\0')
+	{
+		_putchar(n[i]);
+		i++;
+	}
+	_putchar(10);
+
+	return (0);
 }
