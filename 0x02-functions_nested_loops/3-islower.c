@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _islower - check if it is lowercase
+ * _islower - check lowercase
  *
- * Return: 1 if isLower is true 
+ * Return: 1 if c is lowercase
  */
 
-int _islower(int c)
+int _islower(int n)
 {
-	if (c >= 97 && c <= 123)
+	if (n >= 97 && n <= 123)
 	{
 		return (1);
 	}
