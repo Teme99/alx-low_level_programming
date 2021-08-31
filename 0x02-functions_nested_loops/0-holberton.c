@@ -1,19 +1,21 @@
 #include "main.h"
 
 /**
- * main - where execution starts
+ * main - check the code for ALX School students.
  *
- * Return: 0 for success
+ * Program that prints Holberton, followed by a new line
+ *
+ * Return: always 0 (success)
  */
 
 int main(void)
 {
-	char n[] = "_putchar";
+	char s[] = "_putchar";
 	int i = 0;
 
-	while (n[i] != '\0')
+	while (s[i] != '\0')
 	{
-		_putchar(n[i]);
+		_putchar(s[i]);
 		i++;
 	}
 	_putchar(10);
