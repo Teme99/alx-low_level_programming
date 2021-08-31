@@ -1,10 +1,12 @@
 #include <stdio.h>
 
 /**
- * main: where execution starts
+ * main - where execution starts
  *
- * Description: fib numbers until the fib value itself
- * 
+ * Description: get the sum
+ *
+ * not exceeding 4,000,000.
+ *
  * Return: 0 for success
  */
 
