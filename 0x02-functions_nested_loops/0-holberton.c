@@ -1,17 +1,20 @@
-#include <stdlib.h>
+#include<stdio.h>
 #include "main.h"
-#include <stdio.h>
-
 /**
  * main - where execution starts
  *
  * Return: 0 for success
  */
+int main(void)
 
-int main() {
+{
 
-   printf("Holberton \n");
-
-   return 0;
+char c[10] = "Holberton";
+int i;
+for (i = 0; i <= 9; i++)
+{
+_putchar(c[i]);
 }
-
+_putchar('\n');
+return (0);
+}
