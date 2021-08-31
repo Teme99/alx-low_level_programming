@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * main - check the code for ALX School students.
- *
- * Program that prints Holberton, followed by a new line
+ * main - where excution starts
  *
  * Return: always 0 (success)
  */
