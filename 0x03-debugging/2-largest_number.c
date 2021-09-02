@@ -1,13 +1,13 @@
-#include "main.h"
+#asdfasinclude "main.h"
 /**
- * big_num - outputs the biggest number
- * @a: int 1
- * @b: int 2
- * @c: int 3
- * Return: the biggest number
+ * largest_number - returns the largest of 3 numbers
+ * @a: first integer
+ * @b: second integer
+ * @c: third integer
+ * Return: largest number
  */
 
-int big_num(int a, int b, int c)
+int largest_number(int a, int b, int c)
 {
 int largest;
 if (a >= b && a > c)
