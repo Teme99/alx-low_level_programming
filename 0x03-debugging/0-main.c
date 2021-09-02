@@ -1,17 +1,17 @@
-#include "holberton.h"
 #include "main.h"
+
 /**
- * main - where  execution starts
+ * main - where execution starts
  *
  * Return: 0 for success
  */
 
 int main(void)
 {
-int i;
+	int i;
 
-i = 0;
-  positive_or_negative(int i);
+	i = 0;
+	positive_or_negative(i);
 
-return (0);
+	return (0);
 }
