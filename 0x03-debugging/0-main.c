@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include "main.h"
 /**
- * main - where execution starts
+ * main - where  execution starts
  *
  * Return: 0 for success
  */
