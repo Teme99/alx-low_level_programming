@@ -1,25 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - where execution starts
- *
- * Return: 0 for success
- */
+* main - where execution starts
+*
+* Return: 0 for success
+*/
 
 int main(void)
 {
-int i;
+	int i;
 
-printf("Infinite loop incoming :(\n");
+	printf("Infinite loop incoming :(\n");
 
-n = 0;
+	i = 0;
 
-  /*
-   * while (n < 10){
-   *      putchar(i);
-   *}
-   */
-printf("Infinite loop avoided! \\o/\n");
+	/* while (i < 10)*/
+	/* {*/
+	/*	putchar(i);*/
+	/* }*/
 
-return (0);
+	printf("Infinite loop avoided! \\o/\n");
+
+	return (0);
 }
