@@ -1,30 +1,26 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * main - check the code
+ * _atoi - convert string to integer.
+ *@s : character value.
  *
- * Return: Always 0.
+ * Return: n.
  */
-int main(void)
+int _atoi(char *s)
 {
-  int nb;
+int i;
+int n = 0;
+int test = 1;
 
-  nb = _atoi("98");
-  printf("%d\n", nb);
-  nb = _atoi("-402");
-  printf("%d\n", nb);
-  nb = _atoi("          ------++++++-----+++++--98");
-  printf("%d\n", nb);
-  nb = _atoi("214748364");
-  printf("%d\n", nb);
-  nb = _atoi("0");
-  printf("%d\n", nb);
-  nb = _atoi("Suite 402");
-  printf("%d\n", nb);
-  nb = _atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA             ");
-  printf("%d\n", nb);
-  nb = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
-  printf("%d\n", nb);
-  return (0);
+for (i = 0; s[i] != '\0'; i++)
+{
+if (s[i] == ' ')
+i++;
+if (s[i] == '-')
+test = -test;
+if (s[i] >= '0' && s[i] <= '9')
+n = (10 * n) +test * (s[i] - '0');
+else if (n)
+break;
+}
+return (n);
 }
