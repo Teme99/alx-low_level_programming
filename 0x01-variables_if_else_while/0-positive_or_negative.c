@@ -1,29 +1,26 @@
-#include <stdlib.h>
-#include <time.h>
+#include "variadic_functions.h"
+#include <stdarg.h>
 #include <stdio.h>
 
 /**
- * main - where excution starts
- *
- * Return: 0 for success
+ * sum_them_all - A function that sums all its parameters.
+ * @n: number of parameters
+ * @...: Other parameters
+ * Return: The of all parameters
  */
-int main(void)
+int sum_them_all(const unsigned int n, ...)
 {
-	int n;
+  va_list ap;
+  unsigned int i = 0;
+  int sum = 0;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
-	{
-		printf("%d is positive\n", n);
-	}
-	else if (n < 0)
-	{
-		printf("%d is negative\n", n);
-	}
-	else
-	{
-		printf("%d is zero\n", n);
-	}
-	return (0);
+  if (n == 0)
+    return (0);
+
+  va_start(ap, n);
+  for (; i < n; i++)
+    sum += va_arg(ap, int);
+
+  va_end(ap);
+  return (sum);
 }
